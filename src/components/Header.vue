@@ -1,7 +1,7 @@
 <template>
   <header>
       <div class="box-img">
-          <img src="../assets/logo.pmg" alt="">
+          <img src="../assets/logo.png" alt="Logo">
       </div>
   </header>
 </template>
