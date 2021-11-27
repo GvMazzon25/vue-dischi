@@ -1,25 +1,96 @@
 <template>
-<div class="cards">
-  <div 
-      v-if="cardList !== null"
-      class="card" 
-      style="width: 12rem;"
-  >
-      <div
-          v-for="carta in cardList"
-          :key="`carta${carta.author}`"
-          class="card-body color-card">
-        <img :src="carta.poster" class="card-img-top" alt="carta.author">
-      </div>
-      <div class="card color-card">
-        <h3>{{ carta.title }}</h3>
-        <div><span>{{ carta.author }}</span></div>
-        <div><span>{{ carta.genre }}</span></div>
-        <div><span>{{ carta.year }}</span></div>
-      </div>
-  </div>
-  <div v-else>Loading</div>
-</div>
+ <div class="card-box">
+   <div class="card-card">
+     <div class="img-box">
+       <img src="" alt="">
+     </div>
+     <div class="bg-color"><h3 class="bg-color">Title</h3></div>
+     <div class="bg-color"><span class="bg-color">test</span></div>
+     <div class="bg-color"><span class="bg-color">test</span></div>
+     <div class="bg-color"><span class="bg-color">test</span></div>
+   </div>
+   <div class="card-card">
+     <div class="img-box">
+       <img src="" alt="">
+     </div>
+     <div class="bg-color"><h3 class="bg-color">Title</h3></div>
+     <div class="bg-color"><span class="bg-color">test</span></div>
+     <div class="bg-color"><span class="bg-color">test</span></div>
+     <div class="bg-color"><span class="bg-color">test</span></div>
+   </div>
+   <div class="card-card">
+     <div class="img-box">
+       <img src="" alt="">
+     </div>
+     <div class="bg-color"><h3 class="bg-color">Title</h3></div>
+     <div class="bg-color"><span class="bg-color">test</span></div>
+     <div class="bg-color"><span class="bg-color">test</span></div>
+     <div class="bg-color"><span class="bg-color">test</span></div>
+   </div>
+   <div class="card-card">
+     <div class="img-box">
+       <img src="" alt="">
+     </div>
+     <div class="bg-color"><h3 class="bg-color">Title</h3></div>
+     <div class="bg-color"><span class="bg-color">test</span></div>
+     <div class="bg-color"><span class="bg-color">test</span></div>
+     <div class="bg-color"><span class="bg-color">test</span></div>
+   </div>
+   <div class="card-card">
+     <div class="img-box">
+       <img src="" alt="">
+     </div>
+     <div class="bg-color"><h3 class="bg-color">Title</h3></div>
+     <div class="bg-color"><span class="bg-color">test</span></div>
+     <div class="bg-color"><span class="bg-color">test</span></div>
+     <div class="bg-color"><span class="bg-color">test</span></div>
+   </div>
+    <div class="card-card">
+     <div class="img-box">
+       <img src="" alt="">
+     </div>
+     <div class="bg-color"><h3 class="bg-color">Title</h3></div>
+     <div class="bg-color"><span class="bg-color">test</span></div>
+     <div class="bg-color"><span class="bg-color">test</span></div>
+     <div class="bg-color"><span class="bg-color">test</span></div>
+   </div>
+    <div class="card-card">
+     <div class="img-box">
+       <img src="" alt="">
+     </div>
+     <div class="bg-color"><h3 class="bg-color">Title</h3></div>
+     <div class="bg-color"><span class="bg-color">test</span></div>
+     <div class="bg-color"><span class="bg-color">test</span></div>
+     <div class="bg-color"><span class="bg-color">test</span></div>
+   </div>
+   <div class="card-card">
+     <div class="img-box">
+       <img src="" alt="">
+     </div>
+     <div class="bg-color"><h3 class="bg-color">Title</h3></div>
+     <div class="bg-color"><span class="bg-color">test</span></div>
+     <div class="bg-color"><span class="bg-color">test</span></div>
+     <div class="bg-color"><span class="bg-color">test</span></div>
+   </div>
+   <div class="card-card">
+     <div class="img-box">
+       <img src="" alt="">
+     </div>
+     <div class="bg-color"><h3 class="bg-color">Title</h3></div>
+     <div class="bg-color"><span class="bg-color">test</span></div>
+     <div class="bg-color"><span class="bg-color">test</span></div>
+     <div class="bg-color"><span class="bg-color">test</span></div>
+   </div>
+   <div class="card-card">
+     <div class="img-box">
+       <img src="" alt="">
+     </div>
+     <div class="bg-color"><h3 class="bg-color">Title</h3></div>
+     <div class="bg-color"><span class="bg-color">test</span></div>
+     <div class="bg-color"><span class="bg-color">test</span></div>
+     <div class="bg-color"><span class="bg-color">test</span></div>
+   </div>
+ </div>
 </template>
 
 <script>
@@ -50,14 +121,31 @@ export default {
 </script>
 
 <style lang='scss'>
-    .color-card{
-      background-color:  rgba(46, 58, 70, 1);
-      h3{
-        margin-bottom: 0;
-      }
+    
+    .card-box{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      .card-card{
+        width: 200px;
+        text-align: center;
+        color: white;
+        margin-right: 20px;
+        background-color: rgba(46, 58, 70, 1);
+        padding: 10px;
+        margin-bottom: 20px;
+         .img-box{
+            width: 170px;
+            height: 170px;
+            margin: 20px auto;
+          }
+          div span{
+            padding-bottom: 10px; 
+          }
+         .bg-color{
+           margin: 0;
+           background-color: rgba(46, 58, 70, 1);
+        }
     }
-    .card{
-      text-align: center;
-      color: white;
     }
 </style>
