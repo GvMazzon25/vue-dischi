@@ -1,16 +1,15 @@
 <template>
-  <div class="card" style="width: 18rem;">
-  <img src="" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  <div class="card" style="width: 12rem;">
+      <div class="card-body color-card">
+        <img src="" class="card-img-top" alt="...">
+      </div>
+      <div class="card color-card">
+        <h3>Title</h3>
+        <div><span>Autore</span></div>
+        <div><span>Data</span></div>
+        <div><span>Genere</span></div>
+      </div>
   </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">An item</li>
-    <li class="list-group-item">A second item</li>
-    <li class="list-group-item">A third item</li>
-  </ul>
-</div>
 </template>
 
 <script>
@@ -20,5 +19,14 @@ export default {
 </script>
 
 <style lang='scss'>
-
+    .color-card{
+      background-color:  rgba(46, 58, 70, 1);
+      h3{
+        margin-bottom: 0;
+      }
+    }
+    .card{
+      text-align: center;
+      color: white;
+    }
 </style>
