@@ -15,6 +15,12 @@
 <script>
 export default {
     name: 'Cards',
+    methods: {
+      getCards() {
+        axios
+             .get('https://flynn.boolean.careers/exercises/api/array/music')
+      }
+    }
 }
 </script>
 
